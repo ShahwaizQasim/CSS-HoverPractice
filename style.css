@@ -59,3 +59,50 @@ body{
      display: flex;
      justify-content: center;
  }
+
+ /* second hover animation */
+.box3 {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+  }
+  .box3 > img {
+    height: 100%;
+    width: 100%;
+    transition: 0.8s;
+  }
+  .box3:hover > img {
+    transform: scale(1.1);
+    opacity: 60%;
+    cursor: pointer;
+  }
+  .box3 > .layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
+    transform: translateY(100%);
+    transition: transform 0.9s ease;
+  }
+  .box3:hover > .layer {
+    transform: translateY(0%);
+  }
+  .layer > h1 {
+    text-align: center;
+    color: aliceblue;
+    margin-top: 120px;
+  }
+  .layer > h2 {
+    text-align: center;
+    color: aliceblue;
+  }
+  .layer > p {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin-inline: 30px;
+  }
